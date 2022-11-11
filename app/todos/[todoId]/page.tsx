@@ -25,7 +25,7 @@ async function TodoPage({ params: { todoId } }: PageProps) {
 
   // if the todo.id is > than required
 
-  if (!todo.id) return notFound;
+  if (!todo.id) return notFound();
 
   return (
     <div className="p-10 bg-yellow-200 border-2 m-2 shadow-lg">
